@@ -1,11 +1,76 @@
-$color-title: #333;
-h1{
-  color:$color-title;
+$font_phone-number: 'Roboto Slab';
+html, body, a, p, h1
+{
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	color: $color-title;
+	font-size: 16px;
+	color: black;
+	line-height: 1.5;
+	font-family: PT Serif;
 }
-main {
-	margin: 0 0 0 0;
+
+.div.responsive-menu-toggle {
+	display: none;
+}
+
+/*CopyPaste*/
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
+}
+
+.mm-menu {
+	display: none;
+}
+
+.responsive-menu-toggle {
+	display: none;
+}
+
+#block-7 {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+#block-7 {
+	border: 1px solid lightgray;
+	.field--name-body {
+		display: flex;
+		padding-top: 10px;
+		justify-content: space-between;
+	}
+	.telephone {
+		font-family: $font_phone-number;
+		font-size: 24px;
+	}
+	.soc-seti {
+		display: flex;
+		a {
+			width: 40px;
+			height: 40px;
+			margin-right: 5px;
+/* ! */		font-size: 8px;
+			color: transparent;
+			background-position: 0 0;
+			background-size: 40px 80px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		.fb {background-image: url("../images/soc01.jpg");}
+		.tw {background-image: url("../images/soc02.jpg");}
+		.vk {background-image: url("../images/soc03.jpg");}
+		.ok {background-image: url("../images/soc05.jpg");}
+		.instagram {background-image: url("../images/soc04.jpg");}
+		
+	}
+	
+
 }
