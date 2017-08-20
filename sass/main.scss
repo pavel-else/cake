@@ -1,11 +1,60 @@
-$color-title: #333;
-h1{
-  color:$color-title;
+@import 'var.scss';
+
+html, body, h1, h2, h3, p, a {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	color: $color-title;
+	font-family: PT serif;
 }
-main {
-	margin: 0 0 0 0;
+
+#block-7 {
+	width: 1140px;
+	margin: 0 auto;
+	background-color: #ddd;
+}
+
+#block-7 {
+	padding-top: 10px;
+	.field {
+		display: flex;
+		justify-content: space-between;
+	}
+	.telephone {
+		font-family: $font_telepone;
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: bold;
+		text-shadow: 0 1px 2px #555;
+		color: #fff;
+	}
+	.e-mail {
+		color: #fff;
+		text-shadow: 0 1px 2px #555;
+	}
+	.soc-seti {
+		display: flex;
+		flex-direction: row;
+		a {
+			height: 40px;
+			width: 40px;
+			margin-right: 5px;
+			font-size: 8px;
+			background-size: 40px;
+			background-position: 0 0;
+			color: transparent;
+			&:hover {
+				background-position: 0 40px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		.fb {background-image: url('../images/soc01.jpg');}
+		.tw {background-image: url('../images/soc02.jpg');}
+		.vk {background-image: url('../images/soc03.jpg');}
+		.ok {background-image: url('../images/soc05.jpg');}
+		.instagram {background-image: url('../images/soc04.jpg');}
+	}
 }
