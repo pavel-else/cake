@@ -9,7 +9,13 @@ body {
 	font-family: PT serif;
 }
 
-#block-7 {
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#block-7,
+#block-9 {
 	width: 1140px;
 	margin: 0 auto;
 	background-color: #ddd;
@@ -22,7 +28,7 @@ body {
 		justify-content: space-between;
 	}
 	.telephone {
-		font-family: $font_telepone;
+		font-family: $font-caption;
 		font-size: 24px;
 		line-height: 24px;
 		font-weight: bold;
@@ -56,5 +62,40 @@ body {
 		.vk {background-image: url('../images/soc03.jpg');}
 		.ok {background-image: url('../images/soc05.jpg');}
 		.instagram {background-image: url('../images/soc04.jpg');}
+	}
+}
+
+#block-9 {
+	margin-top: -10px;
+	padding-bottom: 70px;
+	.logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5px;
+		img {		
+			width: 60px;
+			height: 60px;
+		}
+	}
+	.logo--white {
+		display: none;
+	}
+	.site-name {
+		margin-bottom: 5px;
+		font-size: 32px;
+		font-family: $font-caption;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+		text-shadow: 0 1px 2px #555;
+	}
+	.site-slogan {
+		font-size: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+		text-shadow: 0 1px 2px #555;
 	}
 }
