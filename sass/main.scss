@@ -7,12 +7,14 @@ html, body, h1, h2, h3, p, a, ul, li {
 
 body {
 	font-family: PT serif;
+	color: white;
+	background-color: #ddd;
+	text-shadow: 0 1px 2px #555;
 }
 
 a {
 	text-decoration: none;
 	color: white;
-	text-shadow: 0 1px 2px #555;
 }
 
 #block-7 .block-content,
@@ -20,7 +22,6 @@ a {
 #block-classier-horizontalmenu .block-content {
 	width: 1140px;
 	margin: 0 auto;
-	background-color: #ddd;
 }
 
 #block-classier-responsivemenumobileicon,
@@ -40,7 +41,7 @@ a {
 		justify-content: space-between;
 	}
 	.telephone {
-		font-family: $font-caption;
+		font-family: $font_caption;
 		font-size: 24px;
 		line-height: 24px;
 		font-weight: bold;
@@ -98,7 +99,7 @@ a {
 	.site-name {
 		margin-bottom:10px;
 		font-size: 32px;
-		font-family: $font-caption;
+		font-family: $font_caption;
 		font-weight: 900;
 		text-transform: uppercase;
 		letter-spacing: 2px;
@@ -132,7 +133,7 @@ a {
 		}
 		a {
 			text-transform: uppercase;
-			font-family: $font-caption;
+			font-family: $font_caption;
 			font-weight: bold;
 			letter-spacing: 1px;
 		}
@@ -152,4 +153,39 @@ a {
 		flex-direction: column;
 		list-style: none;
 	}
+}
+
+#block-8 {
+	padding-top: 420px;
+	padding-bottom: 100px;
+	background-size: cover;
+	border-bottom: 10px solid $color_accent;
+	h1 {
+		width: 680px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		font-size: 58px;
+		font-family: $font_caption;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+	p {
+		width: 680px;
+		margin: 0 auto;
+		font-size: 18px;
+		font-family: $font_caption;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 1px;
+		line-height: 1.7;
+
+	}
+
+	.titr_logo {
+		display: none;
+	}
+
 }
