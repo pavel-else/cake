@@ -25,6 +25,24 @@ a {
 	margin: 0 auto;
 }
 
+/*button*/
+.more-link a {
+	display: block;
+	padding: 15px 40px;
+	border: 4px solid $color_accent;
+	border-radius: 40px;
+	font-size: 18px;
+	font-weight: normal;
+	text-shadow: none;
+	line-height: 28px;
+	color: black;
+	transition: 0.5s;
+	&:hover {
+		background-color: $color_accent;
+		color: white;
+	}
+}
+
 #block-classier-responsivemenumobileicon,
 .visually-hidden {
 	display: none;
@@ -206,6 +224,7 @@ a {
 		color: black;
 	}
 	.view-content {
+		margin-bottom: 50px;
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: space-between;
@@ -255,5 +274,9 @@ a {
 		&:hover {
 			box-shadow: 2px 2px 2px 2px #555;
 		}
+	}
+	.more-link {
+		display: flex;
+		justify-content: center;
 	}
 }
