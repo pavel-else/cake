@@ -17,10 +17,8 @@ a {
 	color: white;
 }
 
-#block-7 .block-content,
-#block-9 .block-content,
-#block-10 .block-content,
-#block-classier-horizontalmenu .block-content,
+/*align center*/
+.block-content,
 #block-classier-views-block-katalog-block-1-2 .view-content {
 	width: 1140px;
 	margin: 0 auto;
@@ -319,4 +317,99 @@ a {
 			text-transform: uppercase;
 		}	
 	}
+}
+
+#block-views-block-blog {
+	padding: 70px 0 100px;
+	background-color: white;
+	h2 {
+		margin-bottom: 20px;
+		font-family: $font_caption;
+		font-size: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		color: black;
+	}
+	.view-content {
+		display: flex;
+		justify-content: space-between;
+	}
+	.views-row {
+		width: 32%;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		box-sizing: border-box;
+		background-color: #f6cfd5;
+	}
+	.views-field-field-img {
+		margin-bottom: 20px;
+		.field-content {
+			overflow: hidden;
+		    height: 230px;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.views-field-title {
+		margin-bottom: 10px;
+		padding: 0 20px;
+		a {
+			font-family: $font_caption;
+			font-size: 28px;
+			color: black;
+		}
+	}
+	.views-field-created {
+		margin-bottom: 10px;
+		padding: 0 20px;
+		color: $color_sec-text;
+		font-weight: normal;
+		text-shadow: none;
+	}
+	.views-field-body {
+		margin-bottom: 20px;
+		padding: 0 20px;
+		p {
+			text-shadow: none;
+			color: black;
+			line-height: 24px;
+		}
+	}
+	.views-field-field-tags {
+		margin-bottom: 20px;
+		padding: 0 20px;
+		display: flex;
+		color: $color_sec-text;
+		a {
+			color: $color_sec-text;
+			text-shadow: none;
+			text-transform: lowercase;
+			text-decoration: underline;
+			&:hover {
+				color: $color_accent;
+				text-decoration: none;
+			}
+		}
+	}
+	.views-field-nid a {
+		display: block;
+		box-sizing: border-box;
+		font-family: $font_caption;
+		font-size: 20px;
+		line-height: 50px;
+		text-align: center;
+		background-color: $color_accent;
+	}
+	.more-link {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}		
 }
