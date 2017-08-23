@@ -413,3 +413,72 @@ a {
 		justify-content: center;
 	}		
 }
+
+#block-3 {
+	padding: 70px 0px 100px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	box-shadow:0 0 0 400px rgba(255,255,255, 0.6) inset;
+	h2 {
+		margin-bottom: 10px;
+		font-family: $font_caption;
+		font-size: 40px;
+		font-weight: normal;
+		text-align: center;
+		text-transform: uppercase;
+		color: black;
+	}
+	.field--name-body p {
+		margin: 0 auto 50px;
+		text-align: center;
+		width: 650px;
+		color: black;
+		font-weight: normal;
+		text-shadow: none;
+	}
+	.field--type-field-collection {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.field__items>.field__item {
+		width: 47%;
+		margin-bottom: 80px;
+		.field--type-image{
+			float: left;
+			padding-right: 25px;
+			img {
+				height: 100px;
+				width: 100px;
+			}
+		}
+		.field--name-field-zagolovok {
+			margin-bottom: 10px;
+			font-family: $font_caption;
+			font-size: 36px;
+			font-weight: 700;
+			line-height: 1;
+			color: black;
+		}
+		.field--name-field-opisanie {
+			color: black;
+			font-weight: normal;
+			text-shadow: none;
+		}
+	}
+	.content {
+
+	}
+	.field--name-field-izobrazenie {
+		display: none;
+	}
+}
