@@ -8,7 +8,7 @@ html, body, h1, h2, h3, p, a, ul, li, img{
 body {
 	font-family: PT serif;
 	color: white;
-	background-color: #efefef;
+	background-color: white;
 	text-shadow: 0 1px 2px #555;
 }
 
@@ -19,7 +19,8 @@ a {
 
 /*align center*/
 .block-content,
-#block-classier-views-block-katalog-block-1-2 .view-content {
+#block-classier-views-block-katalog-block-1-2 .view-content,
+#block-classier-form {
 	width: 1140px;
 	margin: 0 auto;
 }
@@ -30,7 +31,8 @@ a {
 	justify-content: center;
 }
 .more-link a,
-.button a {
+.button a, 
+.button {
 	display: block;
 	padding: 15px 40px;
 	border: 4px solid $color_accent;
@@ -513,7 +515,7 @@ a {
 /*Отзывы*/
 #block-views-block-otzyvy-block-1 {
 	padding: 70px 0 100px;
-	background-image: url("..images/reviews_bg.jpg") !important;
+	background-image: url("../images/reviews_bg.jpg") !important;
 	background-size: cover;
 	h2 {
 		margin-bottom: 20px;
@@ -582,6 +584,77 @@ a {
 			text-shadow: none;
 			color: black;
 			line-height: 24px;
+		}
+	}
+	.more-link a {
+		color: white;
+	}
+}
+
+/*Обратная связь*/
+#block-classier-form {
+	padding: 70px 0 100px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	&::before {
+		content:'';
+		display: block;
+		width: 570px;
+		height: auto;
+		background-color: gray;
+		background-image: url("../images/bg-form.jpg");
+		box-shadow:0 0 0 400px rgba(0,0,0, 0.6) inset;
+	}
+	&::after {
+		position: absolute;
+		content:'';
+		display: block;
+		width: 200px;
+		height: 270px;
+		margin-left: 185px;
+		margin-top: 150px;
+		background-image: url("../images/i-form.png");
+		background-size: 100% 100%;
+		z-index: 4;
+	}
+	.block-content {
+		width: 570px;
+		padding: 35px;
+		padding-left: 45px;
+		box-sizing: border-box;
+		background-color: $color_background-gray;
+		h2 {
+			font-size: 32px;
+			color: black;
+			font-weight: normal;
+			text-shadow: none;
+		}
+		form {
+			max-width: 470px;
+			.form-text,
+			.form-textarea {
+				box-sizing: border-box;
+				width: 470px;
+				margin-bottom: 5px;
+				padding: 25px;
+				border: 3px solid black;
+				resize: none;
+			}
+			.form-textarea {
+				margin-bottom: 25px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+			.button--primary {
+				background-color: $color_background-gray;
+				&:hover {
+					background-color: $color_accent;
+					color: white;
+				}
+			}
 		}
 	}
 }
