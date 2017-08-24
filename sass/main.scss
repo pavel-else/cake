@@ -32,7 +32,7 @@ a {
 }
 .more-link a,
 .button a, 
-.button {
+#block-classier-form .button {
 	display: block;
 	padding: 15px 40px;
 	border: 4px solid $color_accent;
@@ -215,9 +215,11 @@ a {
 	}
 }
 
+/*Наши товары*/
 #block-classier-views-block-katalog-block-1-2 {
 	padding-top: 70px;
 	padding-bottom: 100px;
+	background-color: $color_background-gray;
 	h2 {
 		padding-bottom: 40px;
 		font-family: $font_caption;
@@ -282,6 +284,7 @@ a {
 	}
 }
 
+/*Форма для перезвона*/
 #block-10 {
 	padding: 70px 100px 90px;
 	background-image: url("../images/text_bg.jpg") !important;
@@ -320,6 +323,7 @@ a {
 	}
 }
 
+/*Блог*/
 #block-views-block-blog {
 	padding: 70px 0 100px;
 	background-color: white;
@@ -480,6 +484,7 @@ a {
 /*Благодарности*/
 #block-views-block-blagodarnosti-block-1 {
 	padding: 70px 0 100px;
+	background-color: $color_background-gray;
 	h2 {
 		margin-bottom: 50px;
 		text-align: center;
