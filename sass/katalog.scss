@@ -1,6 +1,119 @@
 @import '_include/_var.scss';
 @import '_include/_main.scss';
+@import '_include/_socseti.scss';
 
 body {
-	background-color: gray !important;
+	background-color: gray;
+}
+
+#block-classier-responsivemenumobileicon,
+.visually-hidden {
+	display: none;
+}
+
+#off-canvas {
+	display: none;
+}
+
+/*align center*/
+.region-header {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-image: url(../images/header_bg_01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.region-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+/*Логотип*/
+#block-9 {
+	order: 1;
+	.field {
+		display: flex;
+	}
+	.logo--white {
+		margin-right: 20px;
+	}
+	img {
+		display: block;
+		width: 50px;
+		height: 50px;
+	}
+	.logo--black {
+		display: none;
+	}
+}
+
+/*телефон, соцсети*/
+#block-7 {
+	order: 2;
+	margin-bottom: 30px;
+	.field--type-text-with-summary {
+		width: 570px;
+		display: flex;
+	}
+	.soc-seti {
+		margin-right: 0;
+		margin-left: auto;
+	}
+}
+
+/*Меню*/
+#block-classier-horizontalmenu {
+	order: 3;
+	width: 100%;
+	.horizontal-menu {
+		display: flex;
+		list-style: none;
+		justify-content: center;
+	}
+	.menu-item {
+		padding: 20px 30px;
+		&.menu-item--active-trail a {
+			color: $color_accent;
+		}
+		a {
+			text-transform: uppercase;
+			font-family: $font_caption;
+			font-weight: bold;
+			letter-spacing: 1px;
+			&:hover {
+				color: $color_accent;
+			}
+		}
+	}
+	.menu-item--expanded {
+		display: flex;
+		flex-direction: column;	
+		&:hover {
+			.sub-nav {
+				display: flex;
+				margin-top: 35px;
+				.menu-item {
+					padding: 15px 50px 15px 10px;
+					border-right: none;
+					border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+			}
+		} 
+	}
+	.sub-nav {	
+		display: none;
+		position: absolute;
+		top: 20px;
+		/* display: flex; */
+		flex-direction: column;
+		list-style: none;
+	}
 }

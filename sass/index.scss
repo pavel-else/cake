@@ -1,5 +1,7 @@
 @import '_include/_var.scss';
 @import '_include/_main.scss';
+@import '_include/_button.scss';
+@import '_include/_socseti.scss';
 
 /*align center*/
 header .block-content,
@@ -11,59 +13,9 @@ footer .region-footer {
 	margin: 0 auto;
 }
 
-/*button*/
-.more-link {
-	display: flex;
-	justify-content: center;
-}
-.more-link a,
-.button a, 
-#block-classier-form .button {
-	display: block;
-	padding: 15px 40px;
-	border: 4px solid $color_accent;
-	border-radius: 40px;
-	font-size: 18px;
-	font-weight: normal;
-	text-shadow: none;
-	line-height: 28px;
-	color: black;
-	transition: 0.5s;
-	&:hover {
-		background-color: $color_accent;
-		color: white;
-	}
-}
-
-
 #block-classier-responsivemenumobileicon,
 .visually-hidden {
 	display: none;
-}
-
-/*Соц. сети*/
-.soc-seti {
-	display: flex;
-	flex-direction: row;
-	a {
-		height: 40px;
-		width: 40px;
-		margin-right: 5px;
-		font-size: 0px;
-		background-size: 40px;
-		background-position: 0 0;
-		&:hover {
-			background-position: 0 40px;
-		}
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-	.fb {background-image: url('../images/soc01.jpg');}
-	.tw {background-image: url('../images/soc02.jpg');}
-	.vk {background-image: url('../images/soc03.jpg');}
-	.ok {background-image: url('../images/soc05.jpg');}
-	.instagram {background-image: url('../images/soc04.jpg');}
 }
 
 /*Телефон*/
