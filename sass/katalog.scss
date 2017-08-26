@@ -1,10 +1,7 @@
 @import '_include/_var.scss';
-@import '_include/_main.scss';
-@import '_include/_socseti.scss';
 
-body {
+body:not(.path-frontpage) {
 	background-color: gray;
-}
 
 #block-classier-responsivemenumobileicon,
 .visually-hidden {
@@ -24,7 +21,7 @@ body {
 
 header {
 	background-image: url(../images/header_bg_01.jpg);
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -117,3 +114,5 @@ header {
 		list-style: none;
 	}
 }
+
+}/*end body.not-front*/

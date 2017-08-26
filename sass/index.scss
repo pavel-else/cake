@@ -2,7 +2,10 @@
 @import '_include/_main.scss';
 @import '_include/_button.scss';
 @import '_include/_socseti.scss';
+@import 'katalog.scss';
 
+
+body.path-frontpage {
 /*align center*/
 header .block-content,
 main .block-content,
@@ -739,3 +742,4 @@ footer {
 	}
 }
 
+}/* End body to front-page */
