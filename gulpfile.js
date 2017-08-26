@@ -4,15 +4,15 @@ var sass 		= require('gulp-sass');
 var notify 		= require('gulp-notify');
 
 gulp.task('mincss', function(){
-  return gulp.src('sass/main.scss')
+  return gulp.src('sass/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCss())
-    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('css/'))
  });
 
 
 gulp.task('watcher', function () {
-	gulp.watch('sass/main.scss', ['mincss']); 
+	gulp.watch('sass/*.scss', ['mincss']); 
 });
 
 gulp.task('default', ['watcher', 'mincss']);

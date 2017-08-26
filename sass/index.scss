@@ -1,21 +1,5 @@
-@import 'var.scss';
-
-html, body, h1, h2, h3, p, a, ul, li, img{
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: PT serif;
-	color: white;
-	background-color: white;
-	text-shadow: 0 1px 2px #555;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-}
+@import '_include/_var.scss';
+@import '_include/_main.scss';
 
 /*align center*/
 header .block-content,
@@ -354,8 +338,10 @@ footer .region-footer {
 		margin-bottom: 20px;
 		font-family: $font_caption;
 		font-size: 40px;
+		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;
+		text-shadow: 0 1px 2px #555;
 		color: black;
 	}
 	.view-content {
@@ -388,6 +374,7 @@ footer .region-footer {
 		a {
 			font-family: $font_caption;
 			font-size: 28px;
+			font-weight: bold;
 			color: black;
 		}
 	}
@@ -445,7 +432,7 @@ footer .region-footer {
 		margin-bottom: 10px;
 		font-family: $font_caption;
 		font-size: 40px;
-		font-weight: normal;
+		font-weight: bold;
 		text-align: center;
 		text-transform: uppercase;
 		color: black;
@@ -546,11 +533,12 @@ footer .region-footer {
 	background-image: url("../images/reviews_bg.jpg") !important;
 	background-size: cover;
 	h2 {
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 		font-family: $font_caption;
 		font-size: 40px;
 		font-weight: normal;
 		text-align: center;
+			text-shadow: 0 1px 2px #555;
 		text-transform: uppercase;
 		color: white;
 	}
@@ -589,7 +577,7 @@ footer .region-footer {
 		text-align: center;
 		.field-content {
 			font-family: $font_caption;
-			font-size: 20px;
+			font-size: 20px; 
 			line-height: 1.2;
 			color: black;
 		}
