@@ -49,6 +49,19 @@ header {
 	.logo--black {
 		display: none;
 	}
+	.site-name a {
+		font-family: $font_caption;
+		font-size: 24px;
+		font-weight: 900;
+		line-height: 1.1;
+		text-shadow: $shadow;
+		text-transform: uppercase;
+	}
+	.site-slogan {
+		font-size: 16px;
+		font-weight: normal;
+
+	}
 }
 
 /*телефон, соцсети*/
@@ -63,6 +76,12 @@ header {
 		margin-right: 0;
 		margin-left: auto;
 	}
+
+	.telephone {
+		font-family: $font_caption;
+		font-size: 24px;
+		font-weight: 700;
+	}
 }
 
 /*Меню*/
@@ -72,12 +91,14 @@ header {
 	.horizontal-menu {
 		display: flex;
 		list-style: none;
-		justify-content: center;
 	}
 	.menu-item {
 		padding: 20px 30px;
 		&.menu-item--active-trail a {
 			color: $color_accent;
+		}
+		&:first-child {
+			padding-left: 0;
 		}
 		a {
 			text-transform: uppercase;
