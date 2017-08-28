@@ -1,7 +1,6 @@
 @import '_include/_var.scss';
 
 body:not(.path-frontpage) {
-	background-color: gray;
 
 /*align -center*/
 main {
@@ -220,8 +219,32 @@ main {
 .layout-sidebar-first {
 	width: 280px;
 	margin-right: 50px;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+	h2 {
+		padding: 15px 20px;
+		font-size: 24px;
+		background-color: $color_accent;
+		color: white;
+	}
+
+	.menu {
+		margin-top: 5px;
+		list-style: none;
+	}
+	.menu-item {
+		margin-bottom: 10px;
+	}
+	a {
+		padding: 30px 20px 30px 10px;
+		display: block;
+		background-color: #efefef;
+		border-left: 10px solid #efefef;
+		&:hover {
+			color: black;
+			background-color: #f6cfd5;
+			border-left: 10px solid $color_accent;
+		}
+	}	
 }
+
 
 }/*end body.not-front*/
