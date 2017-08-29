@@ -11,5 +11,6 @@ Easy TimeTrack
 28.08.2017 - 4h - katalog
 29.08.2017 - 1h - nowosti
 29.08.2017 - 2h - product
+29.08.2017 - 2h - news
 
-TOTAL: 27h
+TOTAL: 29h

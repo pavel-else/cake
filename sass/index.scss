@@ -1350,3 +1350,19 @@ body.page-node-type-tovar-usluga main {
 
 	}
 }
+
+body.page-node-type-novost {
+	.page-title {
+		width: 800px;
+	}
+	main .field--name-body p {
+		margin-bottom: 15px;
+		line-height: 1.5;
+	}
+	.field--name-field-image img {
+		width: 480px;
+		margin: 0 0 40px 40px;
+		height: auto;
+		float: right;
+	}
+}
