@@ -9,5 +9,7 @@ Easy TimeTrack
 25.08.2017 - 2h - Верстка футера
 26.08.2017 - 5h - katalog
 28.08.2017 - 4h - katalog
+29.08.2017 - 1h - nowosti
+29.08.2017 - 2h - product
 
-TOTAL: 24h
+TOTAL: 27h
