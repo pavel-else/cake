@@ -1366,3 +1366,102 @@ body.page-node-type-novost {
 		float: right;
 	}
 }
+
+body.page-node-17 {
+	.region-content {
+		width: 1140px;
+		margin: 0 auto;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.block-page-title-block {
+		width: 100%;
+	}
+	.block-system-main-block {
+		width: 570px;
+		a {
+			color: $color_accent;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		p {
+			color: black;
+			line-height: 1.5;
+		}
+		p:last-child {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+		a {
+			height: 40px;
+			width: 40px;
+			margin-right: 5px;
+			font-size: 0px;
+			background-size: 40px;
+			background-position: 0 0;
+			&:hover {
+				background-position: 0 40px;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+			.icon--fb {background-image: url('../images/soc01.jpg');}
+			.icon--twitter {background-image: url('../images/soc02.jpg');}
+			.icon--vk {background-image: url('../images/soc03.jpg');}
+			.icon--ok {background-image: url('../images/soc05.jpg');}
+			.icon--inst {background-image: url('../images/soc04.jpg');}
+		}
+	}
+	#block-classier-form {
+		background-color: #efefef;
+		max-width: 470px;
+		margin-bottom: 90px;
+		padding: 70px;
+		h2 {
+			width: 370px;
+			font-family: $font_caption;
+			font-size: 40px;
+			text-transform: uppercase;
+			text-align: center;	
+			color: black;
+
+		}
+		.form-text,
+		.form-textarea {
+			box-sizing: border-box;
+			width: 370px;
+			margin-bottom: 5px;
+
+			padding: 25px;
+			border: 1px solid black;
+			resize: none;
+		}
+		.form-textarea {
+			margin-bottom: 25px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.button--primary {
+					margin-left: auto;
+		margin-right: auto;
+			background-color: $color_background-gray;
+			&:hover {
+				background-color: $color_accent;
+				color: white;
+			}
+		}
+	}
+}
